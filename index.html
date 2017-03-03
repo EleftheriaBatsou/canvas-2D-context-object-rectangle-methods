@@ -1,0 +1,43 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script>
+function draw() {
+    var ctx = document.getElementById("my_canvas").getContext("2d");
+    // You can back-reference the canvas element through the context object
+   // alert(ctx.canvas.id+" | "+ctx.canvas.width+" | "+ctx.canvas.height);  
+    
+  	//the 4 cubes
+  	ctx.fillRect(300,200,50,50);
+  	ctx.fillRect(200,200,50,50);  
+  	ctx.fillRect(100,200,50,50);
+  	ctx.fillRect(0,200,50,50);
+    //the 3 cubes
+  	ctx.fillRect(20,20,100,100);
+  
+  	ctx.strokeRect(0,0,100,100);
+  	ctx.strokeRect(20,20,100,100);
+  	ctx.strokeRect(40,40,100,100);
+		//this is also for the 3 cubes
+    ctx.clearRect(0, 0, 100, 100);
+  
+  	//upper right corner
+  	ctx.fillRect(200,70,150,50);
+  
+}
+window.onload = draw;
+</script>
+</head>
+<body>
+  
+  <h3 style="text-align-center">Canvas | 2D Context Object and Rectangle Methods </h3>
+  
+<canvas id="my_canvas" width="400" height="300"></canvas>
+  
+  <div style="text-align-center">
+    <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+  </div> <!-- end footer -->
+  
+</body>  
+</html>
